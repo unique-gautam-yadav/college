@@ -1,0 +1,32 @@
+# Ignore compiled files
+*.o
+*.out
+*.ko
+*.exe
+*.dSYM
+*''
+
+*.class
+
+# Ignore object files and libraries
+*.obj
+*.a
+*.lib
+
+# Ignore build directories
+bin/
+build/
+target/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific files
+*.swp
+*~
+
+# Ignore user-specific files
+config.user
+
+temp*

@@ -6,6 +6,7 @@ public class P11 {
         String inputString = sc.nextLine();
         String result = removeConsecutiveDuplicates(inputString);
         System.out.println(result);
+        sc.close();
     }
 
     public static String removeConsecutiveDuplicates(String inputString) {

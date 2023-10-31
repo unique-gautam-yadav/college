@@ -1,10 +1,23 @@
-/*
-      A
-    B A B
-  C B A B C
-D C B A B C D
+#include <stdio.h>
 
-*/
+void display(int arr[])
+{
 
 
-#include<stdio.h>
+  for (int i = 0; i < ; i++)
+  {
+    printf("%d/n", arr[i]);
+  }
+}
+
+int main()
+{
+
+
+  int arr4[] = {0, 1, [1] = 2, 4};
+  display(arr4);
+
+
+
+  return 0;
+}
