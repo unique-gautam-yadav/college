@@ -25,5 +25,5 @@ print(isMale! ? "Male" : "Female")
 var products = ("Mango", "Apple")  // Tuple
 
 
-let country : String = "BHARAT"  // This is a constant value;
+let country = "BHARAT"  // This is a constant value;
 
