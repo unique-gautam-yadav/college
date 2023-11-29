@@ -1,4 +1,4 @@
-package OPP;
+package oop.lec1;
 
 /*
  * Class
