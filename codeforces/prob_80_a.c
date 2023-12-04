@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isPrime(int num)
+int is_prime(int num)
 {
     if (num < 2)
     {
@@ -16,21 +16,24 @@ int isPrime(int num)
     return 1;
 }
 
+int next_prime(int num)
+{
+    int next_num = num + 1;
+    while (!is_prime(next_num))
+    {
+        next_num++;
+    }
+    return next_num;
+}
+
 int main()
 {
     int n, m;
     scanf("%d %d", &n, &m);
 
-    if (isPrime(m))
+    if (next_prime(n) == m)
     {
-        if (m == n + 2)
-        {
-            printf("YES\n");
-        }
-        else
-        {
-            printf("NO\n");
-        }
+        printf("YES\n");
     }
     else
     {

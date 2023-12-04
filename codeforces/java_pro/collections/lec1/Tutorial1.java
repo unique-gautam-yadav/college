@@ -55,7 +55,7 @@ public class Tutorial1 {
 }
 
 class Student {
-    String name;
+    String name; 
     String course;
 
     public Student(String name, String course) {
