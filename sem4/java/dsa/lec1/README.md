@@ -8,15 +8,15 @@
         - Dynamic Data types
 
         
-        `
+        ```
             interface GetValue<T, R>{
                 R run ( T n);
             }
-        `
+        ```
         In this code the T is Type of the parameters and R is the return type we can specity the T and R while making reference variable of the Interfaace
-        `
+        ```
             GetValue<Int, Double> obj = new ChildClass();
-        `
+        ```
         Here Int is T and Double is R so specified at this line.
         
     - Theory of collection frameworks.
