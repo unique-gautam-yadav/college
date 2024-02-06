@@ -15,5 +15,16 @@ public class L1Main {
 
         // z.test(100);
 
+
+        /// Anonymus public class way to make object of an interface
+
+        // Printable p = new Printable(){
+        //    public void m1(){
+        //        System.out.println("Hello Java");
+        //    }
+        // };
+
+        // p.m1();
+
     }
 }
