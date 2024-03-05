@@ -14,13 +14,8 @@ public class DynamicQueue {
             return;
         }
 
-        Node temp = rear;
-
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-
-        temp.next = p;
+        rear.next = p;
+        rear = p;
     }
 
     public void dequeue() {
