@@ -49,8 +49,9 @@ public class ArrayStack {
             System.out.println("Stack underflow");
             return;
         }
+
         for (int i = top; i >= 0; i--) {
-            System.out.print(elements[i] + "  ");
+            System.out.print(elements[i] + " ");
         }
         System.out.println();
     }

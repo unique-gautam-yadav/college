@@ -33,7 +33,7 @@ class LinkedList {
         Node p = new Node(data);
 
         if (head == null) {
-            head = p;
+            head = p = tail;
         } else {
             p.next = head;
             head = p;
