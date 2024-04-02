@@ -1,4 +1,5 @@
 public class Main {
+    // public static void main(String... args) {
     public static void main(String[] args) {
         MyTree t = new MyTree();
 
@@ -18,15 +19,21 @@ public class Main {
         t.levelOrderInsert(66);
         t.levelOrderInsert(90);
 
+        t.bstInsert(99);
+
         // t.levelOrderTraverse();
 
-        t.inorder();
-        System.out.println();
-        t.preorder();
-        System.out.println();
-        t.postorder();
-        System.out.println();
+        // t.inorder();
+        // System.out.println();
+        // t.preorder();
+        // System.out.println();
+        // t.postorder();
+        // System.out.println();
 
-        t.height();
+        // t.height();
+
+        // System.out.println(t.countLeafNode());
+        // System.out.println(t.countNode());
+        System.out.println(t.isBalance());
     }
 }

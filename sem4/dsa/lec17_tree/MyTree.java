@@ -109,4 +109,91 @@ public class MyTree {
         }
         return Math.max(height(node.left), height(node.right)) + 1;
     }
+
+    public int countNode() {
+        if (root == null)
+            return 0;
+
+        return countNode(root);
+
+    }
+
+    public int countLeafNode() {
+        if (root == null)
+            return 0;
+
+        return countLeafNode(root);
+
+    }
+
+    private int countNode(TreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            return countNode(node.left) + countNode(node.right) + 1;
+        }
+    }
+
+    private int countLeafNode(TreeNode node) {
+        if (node.left == null && node.right == null) {
+            return 1;
+        } else {
+            return countLeafNode(node.left) + countLeafNode(node.right);
+        }
+    }
+
+    public boolean isBalance() {
+        return isBalance(root);
+    }
+
+    private boolean isBalance(TreeNode node) {
+        if (node == null) {
+            return true;
+        }
+
+        int lh = height(root.left);
+        int rh = height(root.right);
+
+        int m = lh - rh;
+
+        if (Math.abs(m) > 1) {
+            return false;
+        }
+
+        return isBalance(node.left) && isBalance(node.right);
+
+    }
+
+    public void bstInsert(int data) {
+        if (root == null) {
+            root = new TreeNode(data);
+        }
+
+        TreeNode temp = root;
+
+        while (true) {
+
+            if (data < temp.data) {
+                if (temp.left == null)
+                    break;
+                temp = temp.left;
+            }
+
+            if (data > temp.data) {
+                if (temp.right == null)
+                    break;
+                temp = temp.right;
+            }
+        }
+
+        if (temp.data == data) {
+            System.out.println("Alredy exists");
+        }
+
+        if (temp.data > data) {
+            System.out.println("TO left of " + temp.data);
+        } else {
+            System.out.println("To right of " + temp.data);
+        }
+    }
 }
