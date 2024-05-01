@@ -37,10 +37,6 @@ public class AdjacencyList {
                     }
                     if (notVisited) {
                         q.push(i);
-                    } else {
-                        if (q.contains(i)) {
-                            return true;
-                        }
                     }
                 }
             }
